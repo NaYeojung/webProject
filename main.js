@@ -48,7 +48,14 @@ app.get('/my', (req, res) => {
     res.redirect('/auth/login');
     return false;
   }
-  res.redirect('list/allmylist');
+  var html = template.HTML('Welcome',
+    `<hr>
+        <h2>My page</h2>
+        <button class="btn2"><a href="/list/basket">관심있는 여행지</a></button><br>
+        <button class="btn2" style="margin-bottom: 70px"><a href="/list/allmylist">여행 버킷리스트</a></button>`,
+    authCheck.statusUI(req, res)
+  );
+  res.send(html);
 })
 
 app.listen(port, () => {

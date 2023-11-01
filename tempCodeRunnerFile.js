@@ -1,1 +1,1 @@
-log
+<a href="/list/allmylist">

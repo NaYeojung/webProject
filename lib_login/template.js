@@ -7,7 +7,6 @@ module.exports = {
         <title>Login TEST - ${title}</title>
         <meta charset="utf-8">
         <style>
-          @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
           @import url(fontawesome-all.min.css);
           @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
           
@@ -24,7 +23,10 @@ module.exports = {
             margin-top: 10px;
           }
           h2 {
+            letter-spacing: 2.5px;
             margin: 30px;
+            margin-top: 40px;
+            margin-bottom: 50px;
           }
 
           .margin {
@@ -91,6 +93,24 @@ module.exports = {
               transition: .2s;
           }
           .btn:hover {
+              background-color: #0aa7a7;
+          }
+          .btn2 {            
+            border: none;
+            width: 75%;
+            background-color: #17eeee;
+            color: white;
+            padding: 15px 0;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: .2s;
+            margin-bottom: 30px;
+          }
+          .btn2 a {
+            color: white;
+          }
+          .btn2:hover {
               background-color: #0aa7a7;
           }
       </style>
