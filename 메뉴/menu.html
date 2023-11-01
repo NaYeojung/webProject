@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <title>Travler : travel destinations</title>
+        <style>
+
+@import url(fontawesome-all.min.css);
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
+
+            body{
+                background-color: rgb(236, 236, 236);
+                font-family: "Source Sans Pro", Helvetica, sans-serif;}
+            .menu {
+                
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+            }
+            .menu_title{
+                margin-top: 90;
+                color: #000000;
+                line-height: 1.8;
+                display: inline; 
+                width: 80%;
+                align-self: start;
+            }
+            .menu_text{
+                margin-top: 80; margin-left: 200;
+                font-size: 3.5rem;
+                font-weight: 800;
+                letter-spacing: 0.07em;
+            
+            }
+            .menu_chap{
+                width: 45%;
+                align-self: start;
+                margin-top: 12%;
+                margin-right: 20%;
+            }
+            .menu_chap>ul{
+                line-height: 2.5;
+                list-style: none;
+            }
+            a{
+                text-decoration : none; color: rgb(47, 47, 47);
+                font-size: 1.2rem; 
+                font-weight: 600;
+            }
+            a:visited {color : rgb(47, 47, 47);}
+            a:hover {color: #17eeee;}
+            details{display: inline;}
+            details a{
+                text-decoration : none; color: rgb(47, 47, 47);
+                font-size: 1rem; 
+                font-weight: 600;
+                margin-right: 50;
+            }
+            details a:visited{color : rgb(47, 47, 47);}
+            details a:hover{color: #17eeee;}
+
+            
+            summary{
+                list-style-type: none; cursor : pointer;
+                color: rgb(47, 47, 47);
+                font-size: 1.2rem; 
+                font-weight: 600;
+            }
+            summary:hover{color: #17eeee;}
+            
+            input{
+                position: fixed;
+                right: 4rem;
+                top: 1.3rem;
+                font-size: 2.5rem;
+                color: rgb(47, 47, 47);
+                background:none;
+                border: 0;
+                cursor: pointer;
+            }
+            #back_noise {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width:100%;
+                height:100%;
+                z-index: -1;
+                background-image: url("../noise.webp");
+                background-repeat: repeat;
+                opacity: 10%;
+                }
+        </style>
+    </head>
+
+    <body>
+        <div id="back_noise"></div>
+        <script src="../back_noise.js" async></script>
+        <nav class="menu">
+            <div class="menu_title">
+                <p class="menu_text">Select<br>The service<br>You want</p>
+            </div>
+            <input type="button" value="x" onClick="history.go(-1)">
+            <div class="menu_chap">
+                <ul>
+                    <li><a href="../main/main.html">Introduce Travler</a><hr></li>
+                    <li>
+                        <details>
+                            <summary>Recommended Travel Destinations</summary>
+                            <a href="../지역/main.html">By Region</a>
+                            <a href="../테마/main.html">By Theme</a>
+                        </details>
+                        <hr>
+                    </li>
+                    
+                    <li><a href="../커뮤니티/index.html">Seeing Community</a><hr></li>
+                    <li><a href="/my">My Page</a><hr></li>
+                
+                </ul>
+            </div>
+        </nav>
+    </body>
+</html>
