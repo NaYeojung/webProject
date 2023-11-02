@@ -100,49 +100,4 @@ router.post('/dellist_process2', function(request, response) {
                     });
     });
 
-//찜한 여행지 리스트
-router.get('/basket', function (request, response) {
-    var title = 'all basket';
-    var username = request.session.nickname;
-    
-    db.query('SELECT contents FROM buckettable WHERE username = ?', [username], function(error, results2) {
-        db.query('SELECT contents FROM cbuckettable WHERE username = ?', [username], function(error, results3){
-            if (error) {throw error;}
-            var list2 = template.list2(results3);
-            var list = template.list(results2);
-            var html = template.HTML(title, list,`
-                <nav>
-                <a href="../main/main.html">Travler</a>
-                <ul>
-                <li class="nav_li"><a class="menu" href="../메뉴/menu.html">
-                <span></span>
-                <span></span>
-                <span></span>
-                </a>
-                </li>
-                </ul>
-                </nav>
-                <div class="wrapper">
-                <header>Travel Bucketlist</header>    
-                <form action="/list/mylist_process" method="post">     
-                <div class="inputField">
-                <p><input type="text" id="addValue" name="contents" placeholder="your bucketlist"></p>
-                <p><input class="btn" type="submit" id = "btn" onclick="addTodo()" value="plus       "><i class="xi-plus xi-2x"></i></p>
-                </div>
-                </form>
-                <div>`,
-                
-                `</div>
-                </div>
-                </div>
-                
-            `, '', list2);
-            
-            response.writeHead(200);
-            response.end(html);
-            });
-        });
-    });    
-
-
 module.exports = router;

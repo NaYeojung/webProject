@@ -1,1 +1,1 @@
-<a href="/list/allmylist">
+board/list
