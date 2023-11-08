@@ -39,7 +39,7 @@ app.get('/main', (req, res) => {
     res.redirect('/auth/login');
     return false;
   }
-  res.sendFile(__dirname + "/메뉴/menu.html");
+  res.sendFile(__dirname + "/main/about-us.html");
 })
 
 app.get('/my', (req, res) => {
