@@ -18,14 +18,9 @@ app.use(session({
   store:new FileStore(),
 }))
 
-app.get('/', (req, res) => {
-  if (!authCheck.isOwner(req, res)) {  // 로그인 안되어있으면 로그인 페이지로 이동시킴
-    res.redirect('/auth/login');
-    return false;
-  } else {                                      // 로그인 되어있으면 메인 페이지로 이동시킴
+app.get('/', (req, res) => {                                      // 로그인 되어있으면 메인 페이지로 이동시킴
     res.redirect('/main');
     return false;
-  }
 })
 
 // 인증 라우터
@@ -35,11 +30,7 @@ app.use(express.static(__dirname));
 
 // 메인 페이지
 app.get('/main', (req, res) => {
-  if (!authCheck.isOwner(req, res)) {  // 로그인 안되어있으면 로그인 페이지로 이동시킴
-    res.redirect('/auth/login');
-    return false;
-  }
-  res.sendFile(__dirname + "/main/about-us.html");
+  res.sendFile(__dirname + "/main/main.html");
 })
 
 app.get('/my', (req, res) => {
