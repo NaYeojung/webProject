@@ -84,11 +84,11 @@ body {
     right: 50px;
   
     border: none;
-    border-radius: 16px;
+    border-radius: 0.375rem;
     background: rgb(255, 255, 255);
     padding: 12px;
     font-weight: bold;
-    box-shadow: 0px 5px 15px rgb(174, 174, 174);
+    box-shadow: 0px 3px 5px rgb(208, 208, 208);
     cursor: pointer;
   }
 
