@@ -197,6 +197,14 @@ module.exports = {
           position: relative;
           list-style: none;
         }
+        .editBtn {
+          font-size: 15px;
+          border: none;
+          float: right;
+          cursor: pointer;
+          position: relative;
+          list-style: none;
+        }
         #complete {
           text-decoration: line-through;
           text-decoration-color: red;
@@ -297,6 +305,17 @@ module.exports = {
 </script>
       </head>
       <body>
+      <nav>
+                      <a href="../main/main.html">Travler</a>
+                      <ul>
+                      <li class="nav_li"><a class="menu" href="../메뉴/menu.html">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      </a>
+                      </li>
+                      </ul>
+                      </nav>
         <div class="background">
           ${authStatusUI}
           ${body1}

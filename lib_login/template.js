@@ -14,8 +14,79 @@ module.exports = {
           body {
               font-family: "Source Sans Pro", Helvetica, sans-serif;
               background-color: rgb(236, 236, 236);
-              margin: 100px;
+              margin-top: 150px;
               margin-bottom: 10px;
+          }
+          nav a {
+            padding: 0.4rem;
+            display: block;
+            float: left;
+            text-decoration:none;
+            font-size:1.3rem;
+            color:rgb(86, 86, 86);
+            cursor: pointer;
+          }
+          
+          nav a:hover {
+            border-bottom-color: transparent;
+            color: #17eeee;
+          }
+          
+          nav {
+            top: -1rem;
+            font-weight: 500;
+            margin: 3rem;
+            width: 100%;
+            z-index: 2;
+            position: fixed;
+            overflow:hidden;
+            background-color: transparent;
+          }
+          
+          nav ul {
+            float: right;
+            padding: 0 6rem;
+            list-style: none;
+          }
+          
+          .menu, menu span {
+            display: inline-block;
+            box-sizing: border-box;
+          }
+          
+          .menu {
+            top: -0.7rem;
+            position: relative;
+            width: 1.2rem;
+            height: 1.2rem;
+          }
+          
+          .menu span {
+            position: absolute;
+            left: 0;
+            width: 1.3rem;
+            height: 0.17rem;
+            background-color:rgb(86, 86, 86);
+            border-radius:0.1rem;
+          }
+          
+          .menu span:nth-of-type(1) {
+            top: 0;
+          }
+          
+          .menu span:nth-of-type(2) {
+            top: 0.5rem;
+          }
+          
+          .menu span:nth-of-type(3) {
+            bottom: 0;
+          }
+          .nav_li {
+            display: inline-block;
+            vertical-align: middle;
+            width: 100%;
+            transition: all .5s;
+            padding: 1rem;
           }
           a {
             text-decoration-line: none;
@@ -116,6 +187,18 @@ module.exports = {
       </style>
       </head>
       <body>
+      <nav>
+                      <a href="../main/main.html">Travler</a>
+                      <ul>
+                      <li class="nav_li"><a class="menu" href="../메뉴/menu.html">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      </a>
+                      </li>
+                      </ul>
+                      </nav>
+        
         <div class="background">
           ${authStatusUI}
           ${body}
