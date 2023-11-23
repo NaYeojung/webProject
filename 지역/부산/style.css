@@ -79,19 +79,19 @@ body {
   #region {
     position: fixed;
     top: 30%;
-    right: 50px;
+    left: 50px;
   
     border: none;
     border-radius: 0.375rem;
     background: rgb(255, 255, 255);
-    padding: 12px;
-    font-weight: bold;
+    padding: 10px;
+    padding-left: 0;
     box-shadow: 0px 3px 5px rgb(208, 208, 208);
     cursor: pointer;
   }
 
   .region-nav {
-    text-align: center;
+    text-align: left;
     flex-direction: column;
     padding-left: 0;
     margin-bottom: 0;
@@ -99,7 +99,7 @@ body {
     display: table;
     margin-left: auto;
     margin-right: auto;
-
+    font-size: 12px;
   }
   #region-link {
     text-decoration: none;
@@ -109,7 +109,10 @@ body {
   .region-item {
       margin: 15px;
   }
-
+  .destination {
+    text-decoration: none;
+    color: #5d5d5d;
+  }
   
   .menu, menu span {
     display: inline-block;
@@ -252,6 +255,10 @@ body {
   
   letter-spacing: 0.07em;
   word-spacing: 0.2em;
+}
+
+.p-1 > p {
+  font-size: 15px;
 }
 
 .img-area {

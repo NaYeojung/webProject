@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Travler : travel destinations</title>
+        <link href="styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav>
+			<a href="../../main/main.html">Travler</a>
+			<ul>
+				<li><a class="menu" href="../../메뉴/menu.html">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+        <section>
+            
+            <!--<button id="theme2">
+                <p class="theme-title">Number of courses</p>
+                <ul class="theme-nav">
+                    <li class="theme-item"><a id="theme-link" href="../힐링/index.html">2</a></li>
+                    <li class="theme-item"><a id="theme-link" href="../힐링/index.html">3</a></li>
+                    <li class="theme-item"><a id="theme-link" href="../힐링/index.html">4</a></li>
+                    <li class="theme-item"><a id="theme-link" href="../힐링/index.html">5</a></li>
+                </ul>
+                <ul class="theme-nav">
+                </ul>
+            </button>
+            <button id="theme3">
+                <p class="theme-title">Region</p>
+                <ul class="theme-nav">
+                    <li class="theme-item"><a id="theme-link" href="../힐링/index.html">Seoul / Incheon</a></li>
+                    <li class="theme-item"><a id="theme-link" href="../힐링/index.html">Gyeonggido</a></li>
+                    <li class="theme-item"><a id="theme-link" href="../힐링/index.html">Gangwondo</a></li>
+                </ul>
+                <ul class="theme-nav">
+                    <li class="theme-item"><a id="theme-link" href="../힐링/index.html">Chungcheongdo / Daejeon</a></li>
+                    <li class="theme-item"><a id="theme-link" href="../힐링/index.html">Gyeongsangbukdo / Daegu</a></li>
+                </ul>
+                <ul class="theme-nav">
+                    <li class="theme-item"><a id="theme-link" href="../힐링/index.html">Gyeongsangnamdo / Busan / Ulsan</a></li>
+                    <li class="theme-item"><a id="theme-link" href="../힐링/index.html">Jeollado / Gwangju</a></li>
+                </ul>
+                <ul class="theme-nav">
+                </ul>
+            </button>-->
+        </section>
+        <section>
+            <a href="#" onClick="javascript:window.scrollTo(0,0)" id="start-link"><button class="start" type="button">▲</button></a>
+        </section>
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading">Food Tour</h2>
+                </div>
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid shadow" src="images/1.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">After bathing in the hot springs</div>
+                                <div class="portfolio-caption-subheading text-muted">Pamper yourself with sea eel and green onion pancakes.</div>
+                            </div>
+                        </div>
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid shadow" src="images/2.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">A sweet city with an exotic atmosphere</div>
+                                <div class="portfolio-caption-subheading text-muted">Hot place in Songdo Central Park</div>
+                            </div>
+                        </div>
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid shadow" src="images/3.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Famous food tour</div>
+                                <div class="portfolio-caption-subheading text-muted">In Gunsan</div>
+                            </div>
+                        </div>
+                        <!-- Portfolio item 4-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid shadow" src="images/4.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Visit a special cafe</div>
+                                <div class="portfolio-caption-subheading text-muted">In Jeju</div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Portfolio Modals-->
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="images/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="justify-content-center">
+                            <div>
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2>Take care of your body after<br> bathing in the hot springs</h2>
+                                    <section class="page-section">
+                                        <div class="container">
+                                            
+                                            <ul class="timeline">
+                                                <li>
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/1-1.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>1</h4>
+                                                            <h4 class="subheading">Dongrae hot spring open-air foot bath</h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">It is one of the oldest hot springs in our country, and the water temperature is 63℃. It is a slightly kaline saline spring, and drinking the water outside of bathing is known to be effective in treating chronic gastrointestinal diseases and gastrointestinal muscle weakness. In addition, it is known as a health hot spring that is effective for rheumatic diseases, movement disorders, neuralgia, arthritis, fatigue recovery, and blood circulation disorders.</p></div>
+                                                    </div>
+                                                </li>
+                                                <li class="timeline-inverted">
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/1-2.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>2</h4>
+                                                            <h4 class="subheading">Rumored to be the original Nansan bear eel</h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">Because the eel is supplied directly from the producer, it boasts fresh and chewy meat. Here, the menu consists of three types of eel: grilled with seasoning, grilled with salt, and grilled whole. The first floor is for general guests, and the second floor is for banquet seating for groups.
+                                                        </p></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/1-3.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>3</h4>
+                                                            <h4 class="subheading">Dongrae Halmae Green Onion Pancake</h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">This is a house that has been passing down the taste of Dongrae green onion pancake, a traditional local food of Dongrae, which was said to have been presented to the king by the Dongrae magistrate during the Joseon Dynasty for four generations. Now, the grandson (Mr. Kim Jeong-hee) is carrying on the business, and when my grandmother ran it, it started under the name Jeil Restaurant. Dongrae green onion pancake is made by mixing glutinous rice powder and non-glutinous rice powder in a savory broth, and mixing various seafood and beef with fragrant green onions to create a light, soft, and sweet taste.</p></div>
+                                                    </div>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </section>
+                                    <button class="btn btn-primary btn-xl" data-bs-dismiss="modal" type="button" onclick="">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="images/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="justify-content-center">
+                            <div>
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2>Songdo, a sweet city<br>with an exotic atmosphere</h2>
+                                    <section class="page-section">
+                                        <div class="container">
+                                            
+                                            <ul class="timeline">
+                                                <li>
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/2-1.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>1</h4>
+                                                            <h4 class="subheading">BURGERROOM 181</h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">Burger Room 181, with its exotic and vintage appearance, is a handmade burger restaurant with plenty of fresh ingredients inside thick buns. You can taste a variety of unique burgers.</p></div>
+                                                    </div>
+                                                </li>
+                                                <li class="timeline-inverted">
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/2-2.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>2</h4>
+                                                            <h4 class="subheading">Geulida dessert</h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">It is a dessert restaurant where a professional pastry chef who graduated from the Le Cordon Bleu Pastry Diploma sells homemade desserts every day.
+                                                        </p></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/2-3.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>3</h4>
+                                                            <h4 class="subheading">Incheon Compaq Smart City</h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">Compaq Smart City, located in Songdo International Business Complex, Incheon, was built as a major facility for the 2009 Incheon World Cities Festival. While viewing the three exhibition halls, ‘Ancient and Modern Exhibition Hall’, ‘Incheon Model Hall’, and ‘IFEZ Model Hall’, the plan stands out as being designed to naturally see and feel Incheon’s development process, current appearance, and future vision.</p></div>
+                                                    </div>
+                                                </li>
+                                                <li class="timeline-inverted">
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/2-4.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>4</h4>
+                                                            <h4 class="subheading">Apple Pork Belly</h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">Apple Pork Belly is a restaurant in Yeonsu-gu, Incheon. It specializes in raw pork belly meat that is aged for 24 hours in apple juice, first charcoal-grilled with apple juice, smoked using apple tree chips, and finally dipped in delicious apple sauce. Meat aged in apple juice can be wrapped in tortillas, spicy vegetables, and sliced ​​apples, adding to the fun.</p></div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </section>
+                                    <button class="btn btn-primary btn-xl" data-bs-dismiss="modal" type="button" onclick="">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="images/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="justify-content-center">
+                            <div>
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2>Gunsan's famous food tour</h2>
+                                    <section class="page-section">
+                                        <div class="container">
+                                            
+                                            <ul class="timeline">
+                                                <li>
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/3-1.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>1</h4>
+                                                            <h4 class="subheading">Wolmyeong Park</h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">Wolmyeongsan Mountain, Janggyesan Mountain, Seollimsan Mountain, Jeombangsan Mountain, and Seokchisan Mountain are a famous tourist attraction in Gunsan, and were the best school trip course in Gunsan in the 1960s and 1970s. It is a huge park with a total area of ​​about 770,000 pyeong and a walking trail that is 12km long. You can see the surrounding scenery, including Gunsan City and Janghang Refinery, at a glance.</p></div>
+                                                    </div>
+                                                </li>
+                                                <li class="timeline-inverted">
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/3-2.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>2</h4>
+                                                            <h4 class="subheading">Gunsan Jungdong Hotteok</h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">Jungdong hotteok is made with Gunsan's representative white glutinous barley and black foods (black beans, black rice, black sesame seeds, etc.), so it has a nutty, chewy, and light taste. Another characteristic feature is that there is so much syrup inside that it overflows. It is said that the delicious way to eat hotteok at this house is to tear the hotteok with tongs, remove the blood from the top, dip it in the syrup, eat it first, and then roll up the blood from the lower part with the remaining syrup.</p></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/3-3.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>3</h4>
+                                                            <h4 class="subheading">Lee Seongdang</h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">Lee Seongdang, located on Jungang-ro, Gunsan, is the oldest existing bakery in Korea. The house's representative breads are bean paste bread and vegetable bread, which are served several times a day at certain times, but are so popular that there is a separate waiting line for these two breads. If there are a lot of people waiting, the number of breads that can be purchased per person may be limited. In addition to the famous bread, sandwiches and milkshakes made on the spot are also popular.</p></div>
+                                                    </div>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </section>
+                                    <button class="btn btn-primary btn-xl" data-bs-dismiss="modal" type="button" onclick="">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 4 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="images/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="justify-content-center">
+                            <div>
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2>Visit a special cafe in Jeju</h2>
+                                    <section class="page-section">
+                                        <div class="container">
+                                            
+                                            <ul class="timeline">
+                                                <li>
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/4-1.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>1</h4>
+                                                            <h4 class="subheading">Warang warang</h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">Warangwarang, located in Wimi-ri Village in the southern part of Jeju, is a must-see course in Jeju's winter travel, and is located a few steps away from a fascinating colony of camellia trees that bloom red flowers in the middle of winter. They sell various types of coffee, tea, cookies and juice, and among them, red bean latte and grilled glutinous rice cake are Warang Warang's winter delicacies.</p></div>
+                                                    </div>
+                                                </li>
+                                                <li class="timeline-inverted">
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/4-2.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>2</h4>
+                                                            <h4 class="subheading">Jeju Herb Garden</h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">Facilities include a walking trail that winds around the herb garden, an herb shop where you can purchase herb-related products, a cafe where you can taste a variety of fusion foods using herbs, and an herb experience center where you can share knowledge and information about herbs and enjoy a variety of experiences. This is provided.
+                                                        </p></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/4-3.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>3</h4>
+                                                            <h4 class="subheading">Jeju Folk Village Museum</h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">Using the late Joseon Dynasty, the 1890s, as a reference period, Jeju Island's traditional folk materials are comprehensively organized and displayed. In particular, the approximately 100 traditional houses are not decorated and built to look similar, but are actually almost completely restored by moving the houses where Jeju residents lived down to each stone and pillar. This traditional house displays approximately 8,000 pieces of folk materials, including household utensils, farming tools, fishing tools, furniture, and stone objects.</p></div>
+                                                    </div>
+                                                </li>
+                                                <li class="timeline-inverted">
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/4-4.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>4</h4>
+                                                            <h4 class="subheading">Jeju Doltogori Cafe
+                                                            </h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">Doltogori Cafe, where you can enjoy a dessert and a foot bath, is a warm space popular for its unique foot bath tub made of black basalt and homemade gelato and bread. Unique breads are especially popular, not only because they taste good, but because there is something unique about this bakery that cannot be found at other bakeries.
+                                                        </p></div>
+                                                    </div>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </section>
+                                    <button class="btn btn-primary btn-xl" data-bs-dismiss="modal" type="button" onclick="">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="scripts.js"></script>
+    </body>
+    <body  margin: 0; padding: 0;">
+        <footer style="color: #6b6b6b; text-align: center; padding: 10px;">
+            <hr style="margin-bottom: 70px;">
+            <div>
+                <p style="display: inline-block; color: #2f2f2f; font-size: 20px; font-weight: 600; margin-left: 60px; 
+                background: linear-gradient(to right, #17eeee, #162ad9); -webkit-background-clip: text; color: transparent;">Account<br><br>
+                    <a href="/auth/login" style="color: #1f1f1f; text-decoration: none; margin: 20px; font-size: 15px; font-weight: 500; display: block;">Login</a>
+                    <a href="/auth/login" style="color: #1f1f1f; text-decoration: none; margin: 20px; font-size: 15px; font-weight: 500; display: block;">Signin</a></p>
+                <p style="display: inline-block; color: #1f1f1f; font-size: 20px; font-weight: 600; margin-left: 60px;
+                background: linear-gradient(to right, #17eeee, #162ad9); -webkit-background-clip: text; color: transparent;">Destination<br><br>
+                    <a href="../지역/main.html" style="color: #1f1f1f; text-decoration: none; margin: 20px; font-size: 15px; font-weight: 500; display: block;">By region</a>
+                    <a href="../테마/main.html" style="color: #1f1f1f; text-decoration: none; margin: 20px; font-size: 15px; font-weight: 500; display: block;">By theme</a></p>
+                <p style="display: inline-block; color: #2f2f2f; font-size: 20px; font-weight: 600; margin-left: 60px;
+                background: linear-gradient(to right, #17eeee, #162ad9); -webkit-background-clip: text; color: transparent;">Community & news<br><br>
+                    <a href="../테마/main.html" style="color: #1f1f1f; text-decoration: none; margin: 20px; font-size: 15px; font-weight: 500; display: block;">Community</a>
+                    <a href="../테마/main.html" style="color: #1f1f1f; text-decoration: none; margin: 20px; font-size: 15px; font-weight: 500; display: block;">News</a></p>
+                <p style="display: inline-block; color: #2f2f2f; font-size: 20px; font-weight: 600; margin-left: 60px;
+                background: linear-gradient(to right, #17eeee, #162ad9); -webkit-background-clip: text; color: transparent;">My page<br><br>
+                    <a href="/list/allmylist" style="color: #1f1f1f; text-decoration: none; margin: 20px; font-size: 15px; font-weight: 500; display: block;">Bucket list</a>
+                    <a href="/list/allmylist" style="color: #1f1f1f; text-decoration: none; margin: 20px; font-size: 15px; font-weight: 500; display: block;">Setting</a></p>
+			</div>
+            <p style="margin-top: 50px; font-size: 15px;">&copy; 2023 My web project.</p>
+        </footer>
+    </body>
+</html>

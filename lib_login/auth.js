@@ -34,13 +34,13 @@ router.post('/login_process', function (request, response) {
                     response.redirect(`/`);
                 });
             } else {              
-                response.send(`<script type="text/javascript">alert("로그인 정보가 일치하지 않습니다."); 
+                response.send(`<script type="text/javascript">alert("Login information does not match"); 
                 document.location.href="/auth/login";</script>`);    
             }            
         });
 
     } else {
-        response.send(`<script type="text/javascript">alert("아이디와 비밀번호를 입력하세요!"); 
+        response.send(`<script type="text/javascript">alert("Please enter your ID and password"); 
         document.location.href="/auth/login";</script>`);    
     }
 });
@@ -82,21 +82,21 @@ router.post('/register_process', function(request, response) {
             if (results.length <= 0 && password == password2) {     // DB에 같은 이름의 회원아이디가 없고, 비밀번호가 올바르게 입력된 경우 
                 db.query('INSERT INTO usertable (username, password) VALUES(?,?)', [username, password], function (error, data) {
                     if (error) throw error2;
-                    response.send(`<script type="text/javascript">alert("회원가입이 완료되었습니다!");
+                    response.send(`<script type="text/javascript">alert("Complte signin");
                     document.location.href="/";</script>`);
                 });
             } else if (password != password2) {                     // 비밀번호가 올바르게 입력되지 않은 경우
-                response.send(`<script type="text/javascript">alert("입력된 비밀번호가 서로 다릅니다."); 
+                response.send(`<script type="text/javascript">alert("The entered passwords are different."); 
                 document.location.href="/auth/register";</script>`);    
             }
             else {                                                  // DB에 같은 이름의 회원아이디가 있는 경우
-                response.send(`<script type="text/javascript">alert("이미 존재하는 아이디 입니다."); 
+                response.send(`<script type="text/javascript">alert("The ID that already exists."); 
                 document.location.href="/auth/register";</script>`);    
             }            
         });
 
     } else {        // 입력되지 않은 정보가 있는 경우
-        response.send(`<script type="text/javascript">alert("입력되지 않은 정보가 있습니다."); 
+        response.send(`<script type="text/javascript">alert("There is information that has not been entered."); 
         document.location.href="/auth/register";</script>`);
     }
 });

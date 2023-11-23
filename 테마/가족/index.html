@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Travler : travel destinations</title>
+        <link href="styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav>
+			<a href="../../main/main.html">Travler</a>
+			<ul>
+				<li><a class="menu" href="../../메뉴/menu.html">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+        <section>
+            
+            <!--<button id="theme2">
+                <p class="theme-title">Number of courses</p>
+                <ul class="theme-nav">
+                    <li class="theme-item"><a id="theme-link" href="../힐링/index.html">2</a></li>
+                    <li class="theme-item"><a id="theme-link" href="../힐링/index.html">3</a></li>
+                    <li class="theme-item"><a id="theme-link" href="../힐링/index.html">4</a></li>
+                    <li class="theme-item"><a id="theme-link" href="../힐링/index.html">5</a></li>
+                </ul>
+                <ul class="theme-nav">
+                </ul>
+            </button>
+            <button id="theme3">
+                <p class="theme-title">Region</p>
+                <ul class="theme-nav">
+                    <li class="theme-item"><a id="theme-link" href="../힐링/index.html">Seoul / Incheon</a></li>
+                    <li class="theme-item"><a id="theme-link" href="../힐링/index.html">Gyeonggido</a></li>
+                    <li class="theme-item"><a id="theme-link" href="../힐링/index.html">Gangwondo</a></li>
+                </ul>
+                <ul class="theme-nav">
+                    <li class="theme-item"><a id="theme-link" href="../힐링/index.html">Chungcheongdo / Daejeon</a></li>
+                    <li class="theme-item"><a id="theme-link" href="../힐링/index.html">Gyeongsangbukdo / Daegu</a></li>
+                </ul>
+                <ul class="theme-nav">
+                    <li class="theme-item"><a id="theme-link" href="../힐링/index.html">Gyeongsangnamdo / Busan / Ulsan</a></li>
+                    <li class="theme-item"><a id="theme-link" href="../힐링/index.html">Jeollado / Gwangju</a></li>
+                </ul>
+                <ul class="theme-nav">
+                </ul>
+            </button>-->
+        </section>
+        <section>
+            <a href="#" onClick="javascript:window.scrollTo(0,0)" id="start-link"><button class="start" type="button">▲</button></a>
+        </section>
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading">Family Trip</h2>
+                </div>
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid shadow" src="images/1.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Sunrise and camellia flowers</div>
+                                <div class="portfolio-caption-subheading text-muted">‘Red Trip’ in Seocheon</div>
+                            </div>
+                        </div>
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid shadow" src="images/2.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Healing bus wherever you go!</div>
+                                <div class="portfolio-caption-subheading text-muted">Wonju, the city of rest and rest</div>
+                            </div>
+                        </div>
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid shadow" src="images/3.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">A trip to Gyeongju art and museums</div>
+                                <div class="portfolio-caption-subheading text-muted">see with your eyes and feel with your heart</div>
+                            </div>
+                        </div>
+                        <!-- Portfolio item 4-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid shadow" src="images/4.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">A journey following the traces of Admiral Yi Sun-sin</div>
+                                <div class="portfolio-caption-subheading text-muted">Tongyeong travel bonus</div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Portfolio Modals-->
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="images/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="justify-content-center">
+                            <div>
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2>Sunrise and camellia flowers, <br>‘Red Trip’ in Seocheon</h2>
+                                    <section class="page-section">
+                                        <div class="container">
+                                            
+                                            <ul class="timeline">
+                                                <li>
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/1-1.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>1</h4>
+                                                            <h4 class="subheading">Maryangni Camellia Forest</h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">The Camellia Forest in Marang-ri, Seomyeon, one of the eight scenic spots in Seocheon, is designated as Natural Monument No. 169. Here, 85 camellia trees over 500 years old form a dense forest covering 8,265㎡.</p></div>
+                                                    </div>
+                                                </li>
+                                                <li class="timeline-inverted">
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/1-2.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>2</h4>
+                                                            <h4 class="subheading">Geumgang Estuary Bank Tourist Complex</h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">The Geumgang Estuary Bank Tourist Site, located in Seonjeong-ri, Maseo-myeon, Seocheon-gun, Chungcheongnam-do, is a famous place where you can see migratory birds that visit the Geumgang Estuary Bank every year.
+                                                        </p></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/1-3.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>3</h4>
+                                                            <h4 class="subheading">Dongbaekjeong</h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">The famous spot of the Camellia Forest is Dongbaekjeong, a multi-story pavilion built in a place with a good view of the hilltop of the forest. If you climb up Dongbaekjeong, you can enjoy the beautiful scenery of the West Sea, like the East Sea.</p></div>
+                                                    </div>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </section>
+                                    <button class="btn btn-primary btn-xl" data-bs-dismiss="modal" type="button" onclick="">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="images/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="justify-content-center">
+                            <div>
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2>Nature, art, and wherever<br> you go, the healing bus!</h2>
+                                    <section class="page-section">
+                                        <div class="container">
+                                            
+                                            <ul class="timeline">
+                                                <li>
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/2-1.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>1</h4>
+                                                            <h4 class="subheading">Old Print Museum</h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">Located in Hwangdun-ri, Sillim-myeon, Wonju-si, Gangwon-do, it is the only museum in Korea specializing in exhibiting old woodblock prints from around the world. It opened in 2004. The Old Print Museum is a place that collects, stores, exhibits, researches, and educates on old print materials from Eastern countries where printmaking was developed, including Korea, China, Japan, Tibet, Mongolia, India, and Nepal.</p></div>
+                                                    </div>
+                                                </li>
+                                                <li class="timeline-inverted">
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/2-2.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>2</h4>
+                                                            <h4 class="subheading">Park Kyung-ni Literature Park</h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">Park Kyung-ni Literature Park, where you can explore the literary world of Park Kyung-ni, based on her epic novel “Land,” which is praised as a monumental work of the Korean literary world, has turned Park Kyung-ni’s former home, the birthplace of the novel “Land,” into a park. Park Gyeong-ni Literature Park, located on a site of approximately 3,200 pyeong, preserves the old house and garden where Park Gyeong-ni wrote the land in its original form.
+
+                                                        </p></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/2-3.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>3</h4>
+                                                            <h4 class="subheading">Fermented Chocolate Empress</h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">Chocolate Empress, located in Haenggu-dong, Wonju, specializes in ‘fermented chocolate’ that adds special taste and efficacy to chocolate. Naturally fermented chocolate, which took 12 years to create, is aged in pottery for at least 3 days to give it a deep flavor.</p></div>
+                                                    </div>
+                                                </li>
+                                                <li class="timeline-inverted">
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/2-4.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>4</h4>
+                                                            <h4 class="subheading">Wonju Hanji Theme Park</h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">It is a theme space where you can learn everything about Hanji through exhibitions, education, and experiences, as well as the origin and history of Wonju Hanji. On the first floor of the theme park, there are facts about the region that provide a glimpse into the past of Hanji, including the invention and spread of paper, the history of Hanji, the origin and production process of Hanji, and Hanji-related artifacts. The second floor is a space where special exhibitions related to Korean paper and domestic and foreign paper are held.</p></div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </section>
+                                    <button class="btn btn-primary btn-xl" data-bs-dismiss="modal" type="button" onclick="">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="images/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="justify-content-center">
+                            <div>
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2>A museum trip that you can see<br> with your eyes and feel with your heart.</h2>
+                                    <section class="page-section">
+                                        <div class="container">
+                                            
+                                            <ul class="timeline">
+                                                <li>
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/3-1.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>1</h4>
+                                                            <h4 class="subheading">Gyeongju National Museum</h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">Gyeongju National Museum has received a lot of love, deep interest, and support as a treasure trove of Silla's thousand-year-old culture. Recently, the museum has renovated the exhibition environment by opening the art gallery, renovating the Archaeological Hall, Wolji Hall, and Special Exhibition Hall. As a core cultural center that carries out preservation, exhibition, investigation, and research on Silla culture, we plan to become a central cultural complex institution in East Asia by promoting various special exhibitions, international exchange projects, and social education programs.</p></div>
+                                                    </div>
+                                                </li>
+                                                <li class="timeline-inverted">
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/3-2.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>2</h4>
+                                                            <h4 class="subheading">Silla History and Science Museum</h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">The Silla Museum of History and Science, which started as the property of one individual in 1988, restores scientific cultural assets of which only a part of the artifacts remain, explores the principles of their production, analyzes and tests the origins of their structure and beauty using models, and demonstrates scientific preservation methods to provide education of interest. It is located on site.</p></div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </section>
+                                    <button class="btn btn-primary btn-xl" data-bs-dismiss="modal" type="button" onclick="">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 4 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="images/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="justify-content-center">
+                            <div>
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2>A journey following the<br> traces of Admiral Yi Sun-sin</h2>
+                                    <section class="page-section">
+                                        <div class="container">
+                                            
+                                            <ul class="timeline">
+                                                <li>
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/4-1.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>1</h4>
+                                                            <h4 class="subheading">Hansando</h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">Hansando is where the Samdo naval control base was first established during the Japanese invasions of Korea, and the Hansan sea area off the coast is the historical site of the Great Battle of Hansan, which shines brightly in the history of world naval warfare. It is a historic island where the spirit of patriotism still lives on, to the extent that there is not a single place in its name that is not related to King Yi Chungmu.</p></div>
+                                                    </div>
+                                                </li>
+                                                <li class="timeline-inverted">
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/4-2.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>2</h4>
+                                                            <h4 class="subheading">Chungryeolsa Temple</h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">This shrine was built in the 39th year of King Seonjo's reign (1606) by Lee Un-ryong (李雲龍), the 7th governor, by order of the king, to honor and commemorate the great deeds of Lee Chung-mu. There are five gates within the precincts, including a shrine containing the memorial tablet of King Lee Chung-mu, as well as Naesammun, Jungmun, Oesammun, Jeongmun, and Hongsalmun. Inside the middle gate are Dongjae (East Gate) and Seojae (West Gate), where ancestral rites were prepared during Hyangsa (享祀). A. Inside the Oesammun Gate, there are Sungmudang (崇武堂), which was in charge of administrative affairs, and Gyeongchungjae (景忠齋), where talented people were trained. On the left and right of the Oesammun Gate, there are six monuments, including the tombstone of Chungryeol, and outside the Oesammun Gate, built in 1988. There is a restored Ganghanru Pavilion and an exhibition hall.
+                                                        </p></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/4-3.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>3</h4>
+                                                            <h4 class="subheading">Dalla Park</h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">While Mireuksan Mountain boasts the best sunrise view, Dal Park boasts the best sunset in Korea. It is located in the middle of the 23km Sanyang Circuit Road that circles the coast of Mireuk Island, south of Tongyeong City. The name ‘Dal-a’ was given because the terrain here resembles an elephant’s molar, and is now also used to mean ‘a good place to view the moon.’</p></div>
+                                                    </div>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </section>
+                                    <button class="btn btn-primary btn-xl" data-bs-dismiss="modal" type="button" onclick="">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="scripts.js"></script>
+    </body>
+    <body  margin: 0; padding: 0;">
+        <footer style="color: #6b6b6b; text-align: center; padding: 10px;">
+            <hr style="margin-bottom: 70px;">
+            <div>
+                <p style="display: inline-block; color: #2f2f2f; font-size: 20px; font-weight: 600; margin-left: 60px; 
+                background: linear-gradient(to right, #17eeee, #162ad9); -webkit-background-clip: text; color: transparent;">Account<br><br>
+                    <a href="/auth/login" style="color: #1f1f1f; text-decoration: none; margin: 20px; font-size: 15px; font-weight: 500; display: block;">Login</a>
+                    <a href="/auth/login" style="color: #1f1f1f; text-decoration: none; margin: 20px; font-size: 15px; font-weight: 500; display: block;">Signin</a></p>
+                <p style="display: inline-block; color: #1f1f1f; font-size: 20px; font-weight: 600; margin-left: 60px;
+                background: linear-gradient(to right, #17eeee, #162ad9); -webkit-background-clip: text; color: transparent;">Destination<br><br>
+                    <a href="../지역/main.html" style="color: #1f1f1f; text-decoration: none; margin: 20px; font-size: 15px; font-weight: 500; display: block;">By region</a>
+                    <a href="../테마/main.html" style="color: #1f1f1f; text-decoration: none; margin: 20px; font-size: 15px; font-weight: 500; display: block;">By theme</a></p>
+                <p style="display: inline-block; color: #2f2f2f; font-size: 20px; font-weight: 600; margin-left: 60px;
+                background: linear-gradient(to right, #17eeee, #162ad9); -webkit-background-clip: text; color: transparent;">Community & news<br><br>
+                    <a href="../테마/main.html" style="color: #1f1f1f; text-decoration: none; margin: 20px; font-size: 15px; font-weight: 500; display: block;">Community</a>
+                    <a href="../테마/main.html" style="color: #1f1f1f; text-decoration: none; margin: 20px; font-size: 15px; font-weight: 500; display: block;">News</a></p>
+                <p style="display: inline-block; color: #2f2f2f; font-size: 20px; font-weight: 600; margin-left: 60px;
+                background: linear-gradient(to right, #17eeee, #162ad9); -webkit-background-clip: text; color: transparent;">My page<br><br>
+                    <a href="/list/allmylist" style="color: #1f1f1f; text-decoration: none; margin: 20px; font-size: 15px; font-weight: 500; display: block;">Bucket list</a>
+                    <a href="/list/allmylist" style="color: #1f1f1f; text-decoration: none; margin: 20px; font-size: 15px; font-weight: 500; display: block;">Setting</a></p>
+			</div>
+            <p style="margin-top: 50px; font-size: 15px;">&copy; 2023 My web project.</p>
+        </footer>
+    </body>
+</html>

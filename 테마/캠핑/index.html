@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Travler : travel destinations</title>
+        <link href="styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav>
+			<a href="../../main/main.html">Travler</a>
+			<ul>
+				<li><a class="menu" href="../../메뉴/menu.html">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+        <section>
+            
+            <!--<button id="theme2">
+                <p class="theme-title">Number of courses</p>
+                <ul class="theme-nav">
+                    <li class="theme-item"><a id="theme-link" href="../힐링/index.html">2</a></li>
+                    <li class="theme-item"><a id="theme-link" href="../힐링/index.html">3</a></li>
+                    <li class="theme-item"><a id="theme-link" href="../힐링/index.html">4</a></li>
+                    <li class="theme-item"><a id="theme-link" href="../힐링/index.html">5</a></li>
+                </ul>
+                <ul class="theme-nav">
+                </ul>
+            </button>
+            <button id="theme3">
+                <p class="theme-title">Region</p>
+                <ul class="theme-nav">
+                    <li class="theme-item"><a id="theme-link" href="../힐링/index.html">Seoul / Incheon</a></li>
+                    <li class="theme-item"><a id="theme-link" href="../힐링/index.html">Gyeonggido</a></li>
+                    <li class="theme-item"><a id="theme-link" href="../힐링/index.html">Gangwondo</a></li>
+                </ul>
+                <ul class="theme-nav">
+                    <li class="theme-item"><a id="theme-link" href="../힐링/index.html">Chungcheongdo / Daejeon</a></li>
+                    <li class="theme-item"><a id="theme-link" href="../힐링/index.html">Gyeongsangbukdo / Daegu</a></li>
+                </ul>
+                <ul class="theme-nav">
+                    <li class="theme-item"><a id="theme-link" href="../힐링/index.html">Gyeongsangnamdo / Busan / Ulsan</a></li>
+                    <li class="theme-item"><a id="theme-link" href="../힐링/index.html">Jeollado / Gwangju</a></li>
+                </ul>
+                <ul class="theme-nav">
+                </ul>
+            </button>-->
+        </section>
+        <section>
+            <a href="#" onClick="javascript:window.scrollTo(0,0)" id="start-link"><button class="start" type="button">▲</button></a>
+        </section>
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading">Camping</h2>
+                </div>
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid shadow" src="images/1.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Camping trip at the end of the earth</div>
+                                <div class="portfolio-caption-subheading text-muted">The road from Haenam-eup to Land’s End Village</div>
+                            </div>
+                        </div>
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid shadow" src="images/2.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Leisurely looking around Taean</div>
+                                <div class="portfolio-caption-subheading text-muted">While enjoying camping</div>
+                            </div>
+                        </div>
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid shadow" src="images/3.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Songjiho Camping Site</div>
+                                <div class="portfolio-caption-subheading text-muted">In Goseong, Gangwon-do</div>
+                            </div>
+                        </div>
+                        <!-- Portfolio item 4-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid shadow" src="images/4.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">The lyricism of an autumn night embracing nature</div>
+                                <div class="portfolio-caption-subheading text-muted">The superb view is an unforgettable memory</div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Portfolio Modals-->
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="images/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="justify-content-center">
+                            <div>
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2>A must-visit place <br>just for its meaning alone</h2>
+                                    <section class="page-section">
+                                        <div class="container">
+                                            
+                                            <ul class="timeline">
+                                                <li>
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/1-1.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>1</h4>
+                                                            <h4 class="subheading">Haenam Yoon’s Nokwudang</h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">At the Gosan Yun Seon-do site, about 4km south of Haenam-eup, there is Nokwudang, the head family of the Haenam Yun clan, and a relics museum. Nokwudang is the old house of Gosan Yun Seon-do, and is the largest and oldest remaining private house in Jeollanam-do. There are several gatehouses centered on the main building and sarangchae, which form a ㅁ shape and surround the courtyard. Beyond the wall behind the house is Chuwondang (Jegak), and to the east of it there is a shrine to Eochoeungong Yun Hyo-jeong and Yun Seon-do, important ancestors of the Haenam Yun clan.</p></div>
+                                                    </div>
+                                                </li>
+                                                <li class="timeline-inverted">
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/1-2.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>2</h4>
+                                                            <h4 class="subheading">Dalmasan Mountain and Mihwangsa Temple</h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">Dalmasan Mountain is a mountain that rises with a long rocky ridge towards the southern end of Haenam-gun. Sanbaek, which reaches Dakgoljae, where National Highway 13, which connects to Wando via Duryunsan Mountain and Daedunsan Mountain, passes, quickly changes its appearance into a rocky hill as it passes over a mound-like mountain ridge. Mihwangsa Temple is an ancient temple that supports the theory that Buddhism was introduced into Korea by sea. In the past, there were about 20 large and small temples, and Daeungjeon Hall is Treasure No. 947 and is an excellent building in terms of its scale and sophistication.
+                                                        </p></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/1-3.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>3</h4>
+                                                            <h4 class="subheading">Land's End Tourist Site</h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">Songhori Galdu Village, located at the end of the Korean Peninsula, has a spectacular view of the Dadohae seen from the observatory on top of Sajabong Peak at 34 degrees 17 minutes 38 seconds north latitude. Especially on clear days, Jeju Island's Hallasan Mountain can be seen dimly nearby, and forms a beautiful harmony with various islands in the South Sea, including Bogil Island.</p></div>
+                                                    </div>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </section>
+                                    <button class="btn btn-primary btn-xl" data-bs-dismiss="modal" type="button" onclick="">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="images/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="justify-content-center">
+                            <div>
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2>Leisurely looking around Taean<br>while enjoying camping</h2>
+                                    <section class="page-section">
+                                        <div class="container">
+                                            
+                                            <ul class="timeline">
+                                                <li>
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/2-1.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>1</h4>
+                                                            <h4 class="subheading">Mongsanpo Camping Site</h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">Mongsanpo Auto Camping Site is located in front of Mongsanpo Beach, so it is convenient to use the beach along with camping, and you can experience the mudflats along with camping (hoes must be prepared separately). Camping is on a first-come, first-served basis, and reserved areas are separately designated. Electricity use is limited at the campsite, so electricity use is available on a first-come, first-served basis.</p></div>
+                                                    </div>
+                                                </li>
+                                                <li class="timeline-inverted">
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/2-2.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>2</h4>
+                                                            <h4 class="subheading">Facial cancer</h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">Anmyeonam is a three-story temple located on the eastern beach of Anmyeondo Island. This temple was built in 1998 by believers who followed the designated monk of Beopjusa Temple, and was built on the beach of Anmyeondo Island, which preserves the natural beauty. The pine forest at the entrance to Anmyeonam is a place where you can truly enjoy Anmyeondo’s Anmyeondo pine trees. In addition, the sunrise seen from Anmyeonam is a spectacular view, so it is a place that many people visit. There are many uninhabited islands spread out in the sea in front of Anmyeonam. During low tide, you can also experience the mudflats, and in particular, the 100-meter-long pontoon bridge that connects Anmyeonam Hermitage overlooking Cheonsu Bay to Fox Island, a twin island, creates another scenic view.
+                                                        </p></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/2-3.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>3</h4>
+                                                            <h4 class="subheading">Kkotji Beach</h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">Kkotji Beach, located about 4km southwest of Anmyeon-eup, has a white sand beach 3.2km long and 300m wide, and the sand on the beach is made of silica sand. In addition, the beach has a gentle slope, the water is clear, and the water temperature is moderate, so the location conditions for a beach are excellent. During the day when the water recedes and the mud flats are exposed, it is crowded with people who come to dig for clams or catch crabs on the seashore rocks, and at dusk it is crowded with people who come to see the beautiful sunset scenery. In particular, the sunset seen over the shoulders of Halmi Rock and Grandpa Rock, which seem to be close together with their backs to each other on the right side of the beach, is so enchanting and beautiful that it is said to be the best in the country.</p></div>
+                                                    </div>
+                                                </li>
+                                                <li class="timeline-inverted">
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/2-4.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>4</h4>
+                                                            <h4 class="subheading">Daecheon Port</h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">12 km from Boryeong City and 1 km from Daecheon Beach. Now, in the West Coast era, Daecheon Port is raising its prowess from being a key point for marine transportation to a fishing forward base. Although the West Sea has been subject to constant environmental controversy recently, Daecheon Port is a rare port with clean, unpolluted waters. The sea is clean and fish stocks are abundant. Blue crabs, squid, conch, rockfish, sea bream, and prawns are all fresh and plentiful, making visitors feel at ease.</p></div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </section>
+                                    <button class="btn btn-primary btn-xl" data-bs-dismiss="modal" type="button" onclick="">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="images/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="justify-content-center">
+                            <div>
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2>Songjiho Camping Site<br>in Goseong, Gangwon-do</h2>
+                                    <section class="page-section">
+                                        <div class="container">
+                                            
+                                            <ul class="timeline">
+                                                <li>
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/3-1.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>1</h4>
+                                                            <h4 class="subheading">Songjiho Auto Camping Site</h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">Not only is it the best beach for swimming with its clean white sand and shallow water, but in front of it is Jukdo Island with its beautiful scenery. You can enjoy the pleasure of camping with your family and friends, and group camping is also possible. Additionally, the Deep Ocean Water Research Complex and the Migratory Bird Observation Tower are located nearby.</p></div>
+                                                    </div>
+                                                </li>
+                                                <li class="timeline-inverted">
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/3-2.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>2</h4>
+                                                            <h4 class="subheading">Goseong Wanggok Village</h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">Wanggok Traditional Village, located north of Songji Lake, is a place worth stopping by when going on a summer vacation to the northern coastal region of Gangwon-do. The distance from the beach is only 1.5km, but strangely, you cannot hear the sound of waves from the village. This is because mountains with five peaks surround the village. Thanks to the surrounding mountains, most houses were able to avoid bombing during the Korean War. As a result, the old houses have been preserved intact to this day, preserving the traditional village atmosphere. It is not as large in scale as Andong Hahoe Village or Suncheon Naganeupseong Village, and there are not many houses with fancy exteriors, but once you enter the village, you feel as if you have immersed yourself in a time travel to the past.</p></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/3-3.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>3</h4>
+                                                            <h4 class="subheading">Gonghyeonjin 1-ri Beach</h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">Gonghyeonjin 1-ri Beach is located on National Route 7 and has convenient transportation. This beach, with its clean coastline and 12,000 pyeong of white sand, has fine sand and shallow water, making it a good location for a beach. It is operated temporarily with the cooperation of the competent military unit, and the management of the beach is handled by the village management committee. And since Gonghyeonjin Port is nearby, it is also a place where you can taste fresh raw fish. This beach, which is quiet and well-equipped with amenities, is mainly visited by families, and many vacationers who visit once come back year after year.</p></div>
+                                                    </div>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </section>
+                                    <button class="btn btn-primary btn-xl" data-bs-dismiss="modal" type="button" onclick="">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 4 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="images/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="justify-content-center">
+                            <div>
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2>A 2-day, 1-night course in Namwon that is beautiful<br>both during the day and at night.</h2>
+                                    <section class="page-section">
+                                        <div class="container">
+                                            
+                                            <ul class="timeline">
+                                                <li>
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/4-1.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>1</h4>
+                                                            <h4 class="subheading">Danghangpo Tourist Site</h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">Danghangpo Tourist Site is the only sanctuary in the country where Lee Chung-gun fought twice and annihilated the Japanese army. It has a commemorative shrine, a memorial hall, and a battle tower. It is a garden-like tourist attraction along the camellia forest road along the long coastal road along Danghang Bay, which is calmer than a lake, and is an adventure playground. , Family play facilities such as marine leisure sports facilities, a natural history museum displaying stuffed animals such as bears, dinosaur eggs, fish and shellfish fossils, a natural sculpture park with wild flowers, and a natural arts center consisting of a stone pavilion, wave marks from 100 million years ago, and dinosaur footprints. Equipped with a variety of fossils, it is a multi-purpose tourist attraction that can be used as a place to cultivate patriotic spirit, provide nature education, and relax for families and groups.</p></div>
+                                                    </div>
+                                                </li>
+                                                <li class="timeline-inverted">
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/4-2.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>2</h4>
+                                                            <h4 class="subheading">Goseong Dinosaur Museum</h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">Korea's first Goseong Dinosaur Museum opened on November 9, 2004, within Sangjogam County Park, the world's largest dinosaur footprint fossil site. The Goseong Dinosaur Museum, which was opened to improve the image of Goseong, Gyeongsangnam-do, which boasts the beautiful natural scenery of Sangjok Rock and one of the world's top three dinosaur footprint fossil sites, and to meet the demand for natural ecological tourism by creating a differentiated tourist destination, has one floor underground and three floors above ground, and is suitable for children. It is used as a place for experiential learning that can instill dreams and hopes in people, and also provides good attractions for family tourists.
+                                                        </p></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/4-3.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>3</h4>
+                                                            <h4 class="subheading">Hill of wind</h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">Because it is a place with a lot of sea breeze due to its geography, the plants that grow naturally are also affected by the ecological environment, so most plants are short. At the top of 'Windy Hill' is a colony of tall camellia trees that have taken root after being exposed to the sea breeze for a long time. The wrinkled and scarred bark of the camellia trees that have aged with age remains as time itself, and is a place where all the flowers in the world live. In the middle of winter, blood-red flower buds proudly unfold to comfort one's weary life.</p></div>
+                                                    </div>
+                                                </li>
+                                                <li class="timeline-inverted">
+                                                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/4-4.jpg" alt="..." /></div>
+                                                    <div class="timeline-panel">
+                                                        <div class="timeline-heading">
+                                                            <h4>4</h4>
+                                                            <h4 class="subheading">Sinseondae Observatory
+                                                            </h4>
+                                                        </div>
+                                                        <div class="timeline-body"><p class="text-muted">If you go down the path next to the closed elementary school branch on the right side of Dojangpo Village, you will come across Sinseondae. Sinseondae is shaped like a large rock perched on the beach, and is a place with beautiful scenery along with the surrounding coastal scenery. This place appears in the MBC drama "Romance", the CF commercial SK gas station "Waterland", and the MBC drama "Carousel". It is located on the road to Haegeumgang Village after passing through Hak-dong.
+                                                        </p></div>
+                                                    </div>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </section>
+                                    <button class="btn btn-primary btn-xl" data-bs-dismiss="modal" type="button" onclick="">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="scripts.js"></script>
+    </body>
+    <body  margin: 0; padding: 0;">
+        <footer style="color: #6b6b6b; text-align: center; padding: 10px;">
+            <hr style="margin-bottom: 70px;">
+            <div>
+                <p style="display: inline-block; color: #2f2f2f; font-size: 20px; font-weight: 600; margin-left: 60px; 
+                background: linear-gradient(to right, #17eeee, #162ad9); -webkit-background-clip: text; color: transparent;">Account<br><br>
+                    <a href="/auth/login" style="color: #1f1f1f; text-decoration: none; margin: 20px; font-size: 15px; font-weight: 500; display: block;">Login</a>
+                    <a href="/auth/login" style="color: #1f1f1f; text-decoration: none; margin: 20px; font-size: 15px; font-weight: 500; display: block;">Signin</a></p>
+                <p style="display: inline-block; color: #1f1f1f; font-size: 20px; font-weight: 600; margin-left: 60px;
+                background: linear-gradient(to right, #17eeee, #162ad9); -webkit-background-clip: text; color: transparent;">Destination<br><br>
+                    <a href="../지역/main.html" style="color: #1f1f1f; text-decoration: none; margin: 20px; font-size: 15px; font-weight: 500; display: block;">By region</a>
+                    <a href="../테마/main.html" style="color: #1f1f1f; text-decoration: none; margin: 20px; font-size: 15px; font-weight: 500; display: block;">By theme</a></p>
+                <p style="display: inline-block; color: #2f2f2f; font-size: 20px; font-weight: 600; margin-left: 60px;
+                background: linear-gradient(to right, #17eeee, #162ad9); -webkit-background-clip: text; color: transparent;">Community & news<br><br>
+                    <a href="../테마/main.html" style="color: #1f1f1f; text-decoration: none; margin: 20px; font-size: 15px; font-weight: 500; display: block;">Community</a>
+                    <a href="../테마/main.html" style="color: #1f1f1f; text-decoration: none; margin: 20px; font-size: 15px; font-weight: 500; display: block;">News</a></p>
+                <p style="display: inline-block; color: #2f2f2f; font-size: 20px; font-weight: 600; margin-left: 60px;
+                background: linear-gradient(to right, #17eeee, #162ad9); -webkit-background-clip: text; color: transparent;">My page<br><br>
+                    <a href="/list/allmylist" style="color: #1f1f1f; text-decoration: none; margin: 20px; font-size: 15px; font-weight: 500; display: block;">Bucket list</a>
+                    <a href="/list/allmylist" style="color: #1f1f1f; text-decoration: none; margin: 20px; font-size: 15px; font-weight: 500; display: block;">Setting</a></p>
+			</div>
+            <p style="margin-top: 50px; font-size: 15px;">&copy; 2023 My web project.</p>
+        </footer>
+    </body>
+</html>

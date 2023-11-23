@@ -71,7 +71,7 @@ router.post('/mylist_process', function(request, response) {
 
     } 
     else {        // 입력되지 않은 정보가 있는 경우
-        response.send(`<script type="text/javascript">alert("내용을 입력해주세요"); 
+        response.send(`<script type="text/javascript">alert("Please write the contents"); 
         document.location.href="/list/allmylist";</script>`);
     }
 });

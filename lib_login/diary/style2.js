@@ -207,12 +207,11 @@ module.exports = {
     position: fixed;
     top: 20%;
     left: 4%;
-  
+    font-size: 12px;
     border: none;
     border-radius: 0.375rem;
     background: rgb(255, 255, 255);
     padding: 12px;
-    font-weight: bold;
     box-shadow: 0px 3px 5px rgb(208, 208, 208);
     cursor: pointer;
   }
@@ -232,13 +231,49 @@ module.exports = {
   #region-link {
     text-decoration: none;
     color: #5d5d5d;
-    margin: 1.5em;
+    margin: 1em;
   }
   .region-item {
-      margin: 15px;
+      margin: 10px;
+  }
+  .section2 #region {
+    position: fixed;
+    top: 35%;
+    left: 4%;
+    font-size: 12px;
+    border: none;
+    border-radius: 0.375rem;
+    background: rgb(255, 255, 255);
+    padding: 15px;
+    box-shadow: 0px 3px 5px rgb(208, 208, 208);
+    cursor: pointer;
+  }
+
+  
+  .section2 .region-nav {
+    text-align: left;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  .section2 #region-link {
+    text-decoration: none;
+    color: #5d5d5d;
+    margin: 1em;
+    
+  }
+  .section2 .region-item {
+      margin: 10px;
+      margin-bottom: 13px;
   }
         </style>
         <script>
+        
   function deleteEntry(entryId) {
     if (confirm('Are you sure you want to delete this entry?')) {
       var form = document.createElement('form');
@@ -270,13 +305,29 @@ module.exports = {
         </div>
       </body>
       <body  margin: 0; padding: 0;">
-      <section>
+            <section>
                 <button id="region">
                     <ul class="region-nav">
-                        <li class="region-item"><a id="region-link" href="/diary/map">> 일기 쓰러 가기</a></li>
-                        <li class="region-item"><a id="region-link" href="/diary/diarylist" style="color: #17eeee;">> 일기 보관함</a></li>
+                        <li class="region-item"><a id="region-link" href="/diary/map">> Write a diary</a></li>
+                        <li class="region-item"><a id="region-link" href="/diary/diarylist" style="color: #17eeee;">> Diary box</a></li>
                     </ul>
                 </button>
+            </section>
+            <section class="section2">
+              <button id="region">
+                  <ul class="region-nav">
+                      <li class="region-item"><a id="region-link" href="/diary/diarylist">All</a></li>
+                      <li class="region-item"><a id="region-link" href="/diary/diarylist/Gyeonggi">Gyeonggi</a></li>
+                      <li class="region-item"><a id="region-link" href="/diary/diarylist/Gangwon">Gangwon</a></li>
+                      <li class="region-item"><a id="region-link" href="/diary/diarylist/South Cungcheong">South Cungcheong</a></li>
+                      <li class="region-item"><a id="region-link" href="/diary/diarylist/North Cungcheong">North Cungcheong</a></li>
+                      <li class="region-item"><a id="region-link" href="/diary/diarylist/North Gyeongsang">North Gyeongsang</a></li>
+                      <li class="region-item"><a id="region-link" href="/diary/diarylist/North Jeolla">North Jeolla</a></li>
+                      <li class="region-item"><a id="region-link" href="/diary/diarylist/South Jeolla">South Jeolla</a></li>
+                      <li class="region-item"><a id="region-link" href="/diary/diarylist/South Gyeongsang">South Gyeongsang</a></li>
+                      <li class="region-item"><a id="region-link" href="/diary/diarylist/Jeju">Jeju</a></li>
+                  </ul>
+              </button>
             </section>
         <footer style="color: #6b6b6b; text-align: center; padding: 10px;">
             <hr style="margin-bottom: 70px;">

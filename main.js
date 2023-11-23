@@ -45,9 +45,8 @@ app.get('/my', (req, res) => {
   var html = template.HTML('Welcome',
     `<hr>
         <h2>My page</h2>
-        <button class="btn2" style="margin-bottom: 30px"><a href="/list/allmylist">여행 버킷리스트</a></button>
-        <button class="btn2" style="margin-bottom: 30px"><a href="/diary/map">여행 일기 쓰기</a></button>
-        <button class="btn2" style="margin-bottom: 70px"><a href="/diary/diarylist">여행 일기 보기</a></button>`,
+        <button class="btn2" style="margin-bottom: 30px"><a href="/list/allmylist">Travel bucket list</a></button>
+        <button class="btn2" style="margin-bottom: 70px"><a href="/diary/map">Travel diary</a></button>`,
     authCheck.statusUI(req, res)
   );
   res.send(html);

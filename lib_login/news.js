@@ -70,7 +70,7 @@ router.post('/mynews_process', function(request, response) {
                 })
             }   
             else {
-                response.send(`<script type="text/javascript">alert("검색결과가 없습니다")
+                response.send(`<script type="text/javascript">alert("No results were found")
                         document.location.href="/news/allnews";</script>`);
             }       
         });
