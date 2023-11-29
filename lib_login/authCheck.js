@@ -9,7 +9,7 @@ module.exports = {
     statusUI: function (request, response) {
       var authStatusUI = 'Login first'
       if (this.isOwner(request, response)) {
-        authStatusUI = `<br>This is ${request.session.nickname}'s collection    |   <a href="/auth/logout">Logout</a><br>`;
+        authStatusUI = `<br>We are ${request.session.nickname}'s travel manager    |   <a href="/auth/logout">Logout</a><br>`;
       }
       return authStatusUI;
     }

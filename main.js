@@ -9,6 +9,7 @@ var template = require('./lib_login/template.js');
 var listRouter = require('./lib_login/list.js');
 var newsRouter = require('./lib_login/news.js');
 var diaryRouter = require('./lib_login/diary.js');
+var calRouter = require('./lib_login/calendar.js');
 
 const app = express()
 const port = 8080
@@ -30,6 +31,7 @@ app.use('/auth', authRouter);
 app.use('/list', listRouter);
 app.use('/news', newsRouter);
 app.use('/diary', diaryRouter);
+app.use('/calendar', calRouter);
 app.use(express.static(__dirname));
 
 // 메인 페이지
@@ -44,10 +46,15 @@ app.get('/my', (req, res) => {
   }
   var html = template.HTML('Welcome',
     `<hr>
-        <h2>My page</h2>
-        <button class="btn2" style="margin-bottom: 30px"><a href="/list/allmylist">Travel bucket list</a></button>
-        <button class="btn2" style="margin-bottom: 70px"><a href="/diary/map">Travel diary</a></button>`,
-    authCheck.statusUI(req, res)
+        <h2></h2>
+        <button class="btn2" style="margin-bottom: 30px"><a href="/calendar/allcalendar">Calendar</a></button>
+        <button class="btn2" style="margin-bottom: 30px"><a href="/diary/map">Travel diary</a></button>
+        <button class="btn2" style="margin-bottom: 70px"><a href="/list/allmylist">Travel bucket list</a></button>
+        
+        `,
+
+    
+        authCheck.statusUI(req, res)
   );
   res.send(html);
 })
