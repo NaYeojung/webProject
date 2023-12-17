@@ -62,7 +62,7 @@ router.get('/register', function(request, response) {
     <p><input class="login" type="text" name="username" placeholder="id"></p>
     <p><input class="login" type="password" name="pwd" placeholder="password"></p>    
     <p><input class="login" type="password" name="pwd2" placeholder="password again"></p>
-    <p><input class="btn" type="submit" value="sumit"></p>
+    <p><input class="btn" type="submit" value="submit"></p>
     </form>            
     <p><a href="/auth/login">Back to login</a></p>
     `, '');

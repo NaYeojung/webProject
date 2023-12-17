@@ -46,8 +46,7 @@ app.get('/my', (req, res) => {
   }
   var html = template.HTML('Welcome',
     `<hr>
-        <h2></h2>
-        <button class="btn2" style="margin-bottom: 30px"><a href="/calendar/allcalendar">Calendar</a></button>
+        <button class="btn2" style="margin-bottom: 30px; margin-top: 50px"><a href="/calendar/allcalendar">Calendar</a></button>
         <button class="btn2" style="margin-bottom: 30px"><a href="/diary/map">Travel diary</a></button>
         <button class="btn2" style="margin-bottom: 70px"><a href="/list/allmylist">Travel bucket list</a></button>
         
